@@ -64,7 +64,7 @@ Muestra el historial de personajes que tienen su Pokémon.
 
 1. Clona este repositorio:
 ```bash
-git clone ...
+git clone https://github.com/JorgeLuisV/pokestars.git
 ```
 
 2. Instala las dependencias:
