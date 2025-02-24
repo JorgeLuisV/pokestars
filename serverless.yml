@@ -1,0 +1,26 @@
+service: pry-reto-softtek
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+  iamRoleStatements:
+    - Effect: "Allow"
+      Action:
+        - "dynamodb:GetItem"
+        - "dynamodb:PutItem"
+        - "dynamodb:Query"
+        - "dynamodb:Scan"
+      Resource:
+        - "arn:aws:dynamodb:us-east-1:533267143778:table/Cache"
+        - "arn:aws:dynamodb:us-east-1:533267143778:table/Merged"
+
+functions:
+  app:
+    handler: dist/src/server.handler
+    events:
+      - httpApi:
+          method: ANY
+          path: /
+      - httpApi:
+          method: ANY
+          path: /{proxy+}
