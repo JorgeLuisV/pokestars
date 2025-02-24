@@ -13,6 +13,7 @@ provider:
       Resource:
         - "arn:aws:dynamodb:us-east-1:533267143778:table/Cache"
         - "arn:aws:dynamodb:us-east-1:533267143778:table/Merged"
+        - "arn:aws:dynamodb:us-east-1:533267143778:table/Merged/index/dummy-timestamp-index"
 
 functions:
   app:
