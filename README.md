@@ -1,6 +1,6 @@
 # 🌌 Pokestars
 
-Pokestars Node.js es un API Restful desarrollada en Node.js con Typescript, Express.js y Serverless en la cual podrás encontrar qué Pokémon le iría mejor a cada personaje de Star Wars.
+Pokestars Node.js es un API Restful desarrollada en Node.js con Typescript, Express.js y Serverless Framework en la cual podrás encontrar qué Pokémon le iría mejor a cada personaje de Star Wars.
 
 El proyecto consulta las APIs de [SWAPI](https://swapi.dev/) y [PokeAPI](https://pokeapi.co/) para obtener los datos de los personajes.
 
@@ -9,7 +9,7 @@ El proyecto consulta las APIs de [SWAPI](https://swapi.dev/) y [PokeAPI](https:/
 - Node.js
 - Typescript
 - Express.js
-- Serverless
+- Serverless Framework
 - DynamoDB
 - dotenv
 - Joi
@@ -17,6 +17,7 @@ El proyecto consulta las APIs de [SWAPI](https://swapi.dev/) y [PokeAPI](https:/
 - JSON Web Token (JWT)
 - Passport
 - Express rate limit
+- Jest
 - Swagger
 
 ## Endpoints
